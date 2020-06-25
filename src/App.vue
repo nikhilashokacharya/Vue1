@@ -5,10 +5,7 @@
    @onClick="nodeWasClicked"
    />
    
-  <!-- <Prop 
-  :node="root"
-   @onClick="nodeWasClicked"
-   /> -->
+  
   </div>
 </template>
 
