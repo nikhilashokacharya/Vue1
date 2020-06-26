@@ -1,19 +1,20 @@
 <template>
   <div class="form-group">
     <label for="userForm">Select</label>
-    <select class="form-control" name="userForm" id="userForm" v-model="userForm">
+    <select class="form-control" name="userForm" id="userForm" v-model="selectedUserForm">
        <!-- <option v-for:="userForm1 in props" v-bind:value="props">{{userForm1.name}}</option> -->
               <option v-bind:value="userForm" >{{userForm.name}}</option>
-              <option  v-bind:value="userForm.controls.label1" >{{userForm.controls.label1.name}}</option>
-              <option  v-bind:value="userForm" >{{userForm.controls.label2.name}}</option>
+              <option  v-bind:value="userForm.controls.label1" v-if="userForm.controls">{{userForm.controls.label1.name}}</option>
+              <option  v-bind:value="userForm.controls.label2" v-if="userForm.controls" >{{userForm.controls.label2.name}}</option>
     </select> 
-    {{userForm}}
+    <!-- {{userForm}} -->
+    {{selectedUserForm}}
     <hr>
-    {{userForm.controls.label1}}
+    <!-- {{userForm.controls.label1}} -->
     <!-- <vselect v-model="selected" :option="options" :placement="placement"></vselect> -->
     <table style="width:30%" class="table">
   <caption>Properties</caption>
-  <tr>
+  <tr v-for:="s1 in selectedUserForm" >
     <th >Caption</th>
     <td >{{userForm.name}}</td>
   </tr>
@@ -45,54 +46,6 @@ export default {
       selectedUserForm:{},
       // selectedLabel1:[userForm.controls.label1],
       display:["userForm"],
-      root:{
-        name: 'VBA Project',
-        children:[
-          {
-            name:'Forms',
-            children:[
-              {
-                name:'UserForm1',
-                id: "1",
-             controls: [
-            {
-              id: 1,
-              type: "label",
-              name: "label1",
-              properties: {
-                name: "",
-                value: "",
-                top: 12,
-                left: 34,
-                width: 100,
-                height: 150,
-                color: "red"
-              }
-            },
-            {
-              id: 2,
-              type: "label",
-              name: "label2",
-              properties: {
-                name: "",
-                value: "",
-                top: 12,
-                left: 34,
-                width: 100,
-                height: 150,
-                color: "red"
-              }
-            }
-          ]
-        }
-              ,{
-                name:'UserForm2',
-                id:"2"
-              }
-            ]
-          }
-        ]
-      }
     }
   // }, 
   // methods:{
@@ -103,8 +56,9 @@ export default {
   //   console.log(this.selectedUserForm);
   //    }
 
+   
    }
-   };
+}
 
 </script>
 

@@ -36,8 +36,8 @@ export default {
                     type: "label",
                     name: "label1",
                     properties: {
-                name: "",
-                value: "",
+                name: "Property1",
+                value: "inclined",
                 top: 12,
                 left: 34,
                 width: 100,
@@ -52,8 +52,8 @@ export default {
               type: "label",
               name: "label2",
               properties: {
-                name: "",
-                value: "",
+                name: "Property2",
+                value: "vertical",
                 top: 12,
                 left: 34,
                 width: 100,
