@@ -5,17 +5,22 @@
    @onClick="nodeWasClicked"
    />
    
-  
+  <Prop 
+  :userForm="selectedUserForm"
+  v-if="selected"
+   />
   </div>
 </template>
 
 <script>
 import TreeBrowser from './components/TreeBrowser.vue'
-// import Prop from './components/Prop.vue'
+import Prop from './components/Prop.vue'
 export default {
   name: 'App',
   data(){
     return{
+      selected:false,
+      selectedUserForm:{},
       root:{
         name: 'VBA Project',
         children:[
@@ -24,8 +29,43 @@ export default {
             children:[
               {
                 name:'UserForm1',
-              },{
+                id: "1",
+                controls:{
+                  label1:{
+                    id: 1,
+                    type: "label",
+                    name: "label1",
+                    properties: {
+                name: "",
+                value: "",
+                top: 12,
+                left: 34,
+                width: 100,
+                height: 150,
+                color: "red"
+                  }
+                },
+            
+            label2:{
+            
+              id: 2,
+              type: "label",
+              name: "label2",
+              properties: {
+                name: "",
+                value: "",
+                top: 12,
+                left: 34,
+                width: 100,
+                height: 150,
+                color: "red"
+              }
+            }
+            }
+        }
+              ,{
                 name:'UserForm2',
+                id:"2"
               }
             ]
           }
@@ -34,14 +74,17 @@ export default {
     }
   }, methods:{
    nodeWasClicked(node){
-     alert(node.name);
-    
+    //  alert(node.id);
+    this.selected=true,
+     this.selectedUserForm=node;
+    console.log(this.selectedUserForm);
      }
+
    }  
   ,
   components: {
     TreeBrowser,
-    // Prop
+    Prop
  
   }
 }
@@ -57,3 +100,18 @@ export default {
   margin-top: 60px;
 }
 </style>
+//  controls: [
+            // {
+            //   id: 1,
+            //   type: "label",
+            //   name: "label1",
+            //   properties: {
+            //     name: "",
+            //     value: "",
+            //     top: 12,
+            //     left: 34,
+            //     width: 100,
+            //     height: 150,
+            //     color: "red"
+            //   }
+            // },
