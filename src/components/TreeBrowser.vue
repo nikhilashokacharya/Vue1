@@ -8,7 +8,7 @@
 
     <ul v-if="expanded">
       <TreeBrowser
-        v-for="child in node.children"
+        v-for="child in node.userForm"
         :key="child.name"
         :node="child"
         :depth="depth + 1"
@@ -48,7 +48,7 @@ export default {
   },
   computed: {
     hasChildren() {
-      return this.node.children;
+      return this.node.userForm;
     }
   }
 };
@@ -57,6 +57,21 @@ export default {
 <style scoped>
 .node {
   text-align: left;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 7px;
+    margin-block-end: 1px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    cursor:pointer;
+}
+.tree{
+  top: 5px;
+  bottom: 5px;
+  background-color: brown;
 }
 </style>
 
