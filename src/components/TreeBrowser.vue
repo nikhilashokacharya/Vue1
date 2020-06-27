@@ -1,5 +1,5 @@
-<template>
-  <div>
+<template >
+  <div id="tree">
     <div @click="nodeClicked" :style="{'margin-left': `${depth * 2}px`}" class="node">
       <span v-if="hasChildren" class="type">{{expanded ? '&#9660;' : '&#9658;'}}</span>
       <span class="type" v-else>&#9671;</span>
@@ -30,41 +30,13 @@ export default {
       default: 0
     }
   },
-  // data() {
-  //   return {
-  //     root: {
-  //       name: "UserForm1",
-  //       children: [
-  //         {
-  //           id: "Userform1",
-  //           controls: [
-  //             {
-  //               id: 1,
-  //               type: "label",
-  //               name: "label1",
-  //               properties: {
-  //                 name: "",
-  //                 value: "",
-  //                 top: 12,
-  //                 left: 34,
-  //                 width: 100,
-  //                 height: 150,
-  //                 color: "red"
-  //               }
-  //             }
-  //           ]
-  //         }
-  //       ]
-  //     }
-  //   };
-  // },
   components: {
     // Prop
   },
-  data(){
-      return{
-          expanded: false,
-      }
+  data() {
+    return {
+      expanded: false
+    };
   },
   methods: {
     nodeClicked() {
