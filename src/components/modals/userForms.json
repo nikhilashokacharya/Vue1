@@ -1,0 +1,113 @@
+{
+    "userForms": [
+        {
+            "id": 1,
+            "name": "UserForm1",
+            "visible": true,
+            "autoSize": false,
+            "backColor": [
+                "Window Text",
+                "Button Face",
+                "Highlight Text",
+                "Highlight",
+                "Menu Bar"
+            ],
+            "borderColor": [
+                "Button Text",
+                "Button Face",
+                "Highlight Text",
+                "Highlight",
+                "Menu Bar"
+            ],
+            "borderStyle": [
+                "0 - fmBorderStyleSingle",
+                "1 - fmBorderStyleSingle"
+            ],
+            "caption": "UserForm1",
+            "cycle": [
+                "0 - fmCycleAllForms",
+                "2 - fmCycleAllForms"
+            ],
+            "drawBuffer": 32000,
+            "enabled": true,
+            "font": [
+                "Tahoma",
+                "Terminal",
+                "Times New Roman",
+                "Trebuchet MS",
+                "Verdana"
+            ],
+            "foreColor": [
+                "Button Text",
+                "Button Face",
+                "Highlight Text",
+                "Highlight",
+                "Menu Bar"
+            ],
+            "height": 180,
+            "helpContextId": 0,
+            "keepScrollsBarsVisible": [
+                "fmScrollBarsNone",
+                "fmScrollBarsHorizontal",
+                "fmScrollBarsVertical",
+                "fmScrollBarsBoth"
+            ],
+            "left": 0,
+            "mouseIcon": "(None)",
+            "mousePointer": [
+                "0 - fmMousePointerDefault",
+                "1 - fmMousePointerArrow",
+                "2 - fmMousePointerCross",
+                "3 - fmMousePointerIBeam",
+                "6 - fmMousePointerSizeNESW",
+                "7 - fmMousePointerSizeNS",
+                "8 - fmMousePointerSizeNWS"
+            ],
+            "picture": "(None)",
+            "pictureAlignment": [
+                "0 - fmPictureAlignmentTopLeft",
+                "1 - fmPictureAlignmentTopRight",
+                "2 - fmPictureAlignmentCenter",
+                "3 - fmPictureAlignmentBottomLeft",
+                "4 - fmPictureAlignmentBottomRight"
+            ],
+            "pictureSizeMode": [
+                "0 - fmPictureSizeModeClip",
+                "1 - fmPictureSizeModeStretch",
+                "3 - fmPictureSizeModeZoom"
+            ],
+            "pictureTiling": false,
+            "rightToLeft": false,
+            "scrollBars": [
+                "0 - fmScrollBarsNone",
+                "1 - fmScrollBarsHorizontal",
+                "2 - fmScrollBarsVertical",
+                "3 - fmScrollBarsBoth"
+            ],
+            "scrollHeight": 0,
+            "scrollLeft": 0,
+            "scrollTop": 0,
+            "scrollWidth": 0,
+            "showModal": true,
+            "specialEffect": [
+                "0 - fmSpecialEffectFlat",
+                "1 - fmSpecialEffectRaised",
+                "2 - fmSpecialEffectSunken",
+                "3 - fmSpecialEffectEtched",
+                "6 - fmSpecialEffectBump"
+            ],
+            "startUpPosition": [
+                "0 - Manual",
+                "1 - CenterOwner",
+                "2 - CenterScreen",
+                "3 - Windows Default"
+            ],
+            "tag": "",
+            "top": 0,
+            "whatsThisButton": false,
+            "whatsThisHelp": false,
+            "width": 240,
+            "zoom": 100
+        }
+    ]
+}
