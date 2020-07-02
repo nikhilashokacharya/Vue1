@@ -280,5 +280,6 @@ hr {
   height: 22px ;
   text-align: left;
   padding: 0pc;
+  /* font-style: "Verdana"; */
 }
 </style>
