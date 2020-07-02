@@ -1,16 +1,21 @@
 {
-    "userForms": [
+    "textBoxes": [
         {
             "id": 1,
-            "name": "UserForm1",
-            "visible": true,
+            "name": "TextBox1",
             "autoSize": false,
+            "autoTab": false,
+            "autoWordSelect": false,
             "backColor": [
                 "Window Text",
                 "Button Face",
                 "Highlight Text",
                 "Highlight",
                 "Menu Bar"
+            ],
+            "backStyle": [
+                "0 - fmBackStyleTransparent",
+                "1 - fmBackStyleOpaque"
             ],
             "borderColor": [
                 "Button Text",
@@ -20,16 +25,21 @@
                 "Menu Bar"
             ],
             "borderStyle": [
-                "0 - fmBorderStyleSingle",
+                "0 - fmBorderStyleNone",
                 "1 - fmBorderStyleSingle"
             ],
-            "caption": "UserForm1",
-            "cycle": [
-                "0 - fmCycleAllForms",
-                "2 - fmCycleAllForms"
+            "controlSource": "",
+            "controlTipText": "",
+            "dragBehavior": [
+                "0 - fmDragBehaviorDisabled",
+                "1 - fmDragBehaviorEnabled"
             ],
-            "drawBuffer": 32000,
             "enabled": true,
+            "enterFieldBehavior": [
+                "0 - fmEnterFieldBehaviorSelectAll",
+                "1 - fmEnterFieldBehaviorRecallSelection"
+            ],
+            "enterKeyBehavior": false,
             "font": [
                 "Tahoma",
                 "Terminal",
@@ -44,15 +54,16 @@
                 "Highlight",
                 "Menu Bar"
             ],
-            "height": 180,
+            "height": 18,
             "helpContextId": 0,
-            "keepScrollsBarsVisible": [
-                "fmScrollBarsNone",
-                "fmScrollBarsHorizontal",
-                "fmScrollBarsVertical",
-                "fmScrollBarsBoth"
+            "hideSelection": true,
+            "iMEMode": [
+                "0 - fmIMEModeNoControl"
             ],
-            "left": 0,
+            "integralHeight": true,
+            "left": 40,
+            "locked": false,
+            "maxLength": 0,
             "mouseIcon": "(None)",
             "mousePointer": [
                 "0 - fmMousePointerDefault",
@@ -63,32 +74,15 @@
                 "7 - fmMousePointerSizeNS",
                 "8 - fmMousePointerSizeNWS"
             ],
-            "picture": "(None)",
-            "pictureAlignment": [
-                "0 - fmPictureAlignmentTopLeft",
-                "1 - fmPictureAlignmentTopRight",
-                "2 - fmPictureAlignmentCenter",
-                "3 - fmPictureAlignmentBottomLeft",
-                "4 - fmPictureAlignmentBottomRight"
-            ],
-            "pictureSizeMode": [
-                "0 - fmPictureSizeModeClip",
-                "1 - fmPictureSizeModeStretch",
-                "3 - fmPictureSizeModeZoom"
-            ],
-            "pictureTiling": false,
-            "rightToLeft": false,
+            "multiLine": false,
+            "passwordChar": "",
             "scrollBars": [
                 "0 - fmScrollBarsNone",
                 "1 - fmScrollBarsHorizontal",
                 "2 - fmScrollBarsVertical",
                 "3 - fmScrollBarsBoth"
             ],
-            "scrollHeight": 0,
-            "scrollLeft": 0,
-            "scrollTop": 0,
-            "scrollWidth": 0,
-            "showModal": true,
+            "selectionMargin": true,
             "specialEffect": [
                 "0 - fmSpecialEffectFlat",
                 "1 - fmSpecialEffectRaised",
@@ -96,18 +90,20 @@
                 "3 - fmSpecialEffectEtched",
                 "6 - fmSpecialEffectBump"
             ],
-            "startUpPosition": [
-                "0 - Manual",
-                "1 - CenterOwner",
-                "2 - CenterScreen",
-                "3 - Windows Default"
-            ],
+            "tabIndex": 1,
+            "tabKeyBehavior": false,
+            "tabStop": true,
             "tag": "",
-            "top": 0,
-            "whatsThisButton": false,
-            "whatsThisHelp": false,
-            "width": 240,
-            "zoom": 100
+            "text": "",
+            "textAlign": [
+                "1 - fmTextAlignLeft",
+                "2 - fmTextAlignCenter",
+                "3 - fmTextAlignRight"
+            ],
+            "top": 112,
+            "visible": true,
+            "width": 23,
+            "wordWrap": true
         }
     ]
 }

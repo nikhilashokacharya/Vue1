@@ -30,22 +30,22 @@
             <option v-for="(item,key) in backStyle" :key="key" :value="item">{{item}}</option>
           </select>
     </tr>
-    <tr>
+    <!-- <tr>
       <th>BorderColor</th>
       <td>
         <select :value="borderColor">
             <option v-for="(item,key) in borderColor" :key="key" :value="item">{{item}}</option>
           </select>
       </td>
-    </tr>
-    <tr>
+    </tr> -->
+    <!-- <tr>
       <th>BorderStyle</th>
       <td>
         <select :value="borderStyle">
             <option v-for="(item,key) in borderStyle" :key="key" :value="item">{{item}}</option>
           </select>
       </td>
-    </tr>
+    </tr> -->
     <tr>
       <th>Caption</th>
       <td>
@@ -58,6 +58,15 @@
         <input type="text" :value="controlTipText" />
       </td>
     </tr>
+    <!-- <tr>
+      <th>Default</th>
+      <td>
+        <select :value="default">
+            <option selected>true</option>
+            <option>false</option>
+          </select>
+      </td>
+    </tr> -->
     <tr>
       <th>Enabled</th>
       <td>
@@ -102,6 +111,12 @@
       </td>
     </tr>
     <tr>
+      <th>Locked</th>
+      <td>
+        <input type="text" :value="locked" />
+      </td>
+    </tr>
+    <tr>
       <th>MouseIcon</th>
       <td>
         <input type="text" :value="mouseIcon" />
@@ -129,14 +144,14 @@
         </select>
       </td>
     </tr>
-    <tr>
+    <!-- <tr>
       <th>SpecialEffect</th>
       <td>
         <select>
           <option v-for="(value,key) in specialEffect" v-bind:value="value" :key="key">{{item}}</option>
         </select>
       </td>
-    </tr>
+    </tr> -->
     <tr>
       <th>TabIndex</th>
       <td>
@@ -156,11 +171,12 @@
       </td>
     </tr>
     <tr>
-      <th>TextAlign</th>
+      <th>TakeFocusOnClick</th>
       <td>
-        <select>
-          <option v-for="(value,key) in textAlign" v-bind:value="value" :key="key">{{item}}</option>
-        </select>
+        <select :value="takeFocusOnClick">
+            <option selected>true</option>
+            <option>false</option>
+          </select>
       </td>
     </tr>
     <tr>

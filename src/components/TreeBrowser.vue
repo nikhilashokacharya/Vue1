@@ -1,5 +1,5 @@
 <template >
-  <div id="tree">
+  <div class="tree" style="min-height:'50px'">
     <div @click="nodeClicked" :style="{'margin-left': `${depth * 2}px`}" class="node">
       <span v-if="hasChildren" class="type">{{expanded ? '&#9660;' : '&#9658;'}}</span>
       <span class="type" v-else>&#9671;</span>
@@ -7,8 +7,8 @@
     </div>
 
     <ul v-if="expanded">
-      <TreeBrowser
-        v-for="child in node.userForm"
+      <TreeBrowser 
+        v-for="child in node.userForms"
         :key="child.name"
         :node="child"
         :depth="depth + 1"
@@ -48,13 +48,26 @@ export default {
   },
   computed: {
     hasChildren() {
-      return this.node.userForm;
+      return this.node.userForms;
     }
   }
 };
 </script>
 
 <style scoped>
+.tree{
+  /* min-height: 300px; */
+  width: 300px;
+  position: initial;
+  z-index: 1;
+  top: 30;
+  left: 0;
+  /* background-color: rgb(228, 228, 228); */
+  /* overflow-x: hidden; */
+  /* padding-top: 15px; */
+  /* padding-bottom: 5px; */
+  /* border: 2px solid grey; */
+}
 .node {
   text-align: left;
 }
@@ -68,10 +81,10 @@ ul {
     padding-inline-start: 40px;
     cursor:pointer;
 }
-.tree{
+/* .tree{
   top: 5px;
   bottom: 5px;
-  background-color: brown;
-}
+  background-color: rgb(131, 124, 124);
+} */
 </style>
 

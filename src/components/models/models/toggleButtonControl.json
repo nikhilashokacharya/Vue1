@@ -1,8 +1,7 @@
-{
-    "Labels": [
+
         {
             "id": 1,
-            "name": "Label1",
+            "name": "ToggleButton1",
             "accelerator": "",
             "autoSize": false,
             "backColor": [
@@ -16,18 +15,8 @@
                 "0 - fmBackStyleTransparent",
                 "1 - fmBackStyleOpaque"
             ],
-            "borderColor": [
-                "Window Frame",
-                "Button Face",
-                "Highlight Text",
-                "Highlight",
-                "Menu Bar"
-            ],
-            "borderStyle": [
-                "0 - fmBorderStyleNone",
-                "1 - fmBorderStyleSingle"
-            ],
-            "caption": "UserForm1",
+            "caption": "ToggleButton1",
+            "controlSource": "",
             "controlTipText": "",
             "enabled": true,
             "font": [
@@ -44,9 +33,10 @@
                 "Highlight",
                 "Menu Bar"
             ],
-            "height": 10,
+            "height": 40,
             "helpContextId": 0,
-            "left": 0,
+            "left": 55,
+            "locked": false,
             "mouseIcon": "(None)",
             "mousePointer": [
                 "0 - fmMousePointerDefault",
@@ -69,14 +59,7 @@
                 "7 - fmPicturePositionAboveCenter",
                 "8 - fmPicturePositionAboveRight"
             ],
-            "specialEffect": [
-                "0 - fmSpecialEffectFlat",
-                "1 - fmSpecialEffectRaised",
-                "2 - fmSpecialEffectSunken",
-                "3 - fmSpecialEffectEtched",
-                "6 - fmSpecialEffectBump"
-            ],
-            "tabIndex": 0,
+            "tabIndex": 2,
             "tabStop": false,
             "tag": "",
             "textAlign": [
@@ -84,10 +67,10 @@
                 "2 - fmTextAlignCenter",
                 "3 - fmTextAlignRight"
             ],
-            "top": 12,
+            "top": 18,
+            "tripleState": false,
+            "value": false,
             "visible": true,
-            "width": 23,
+            "width": 36,
             "wordWrap": true
         }
-    ]
-}
