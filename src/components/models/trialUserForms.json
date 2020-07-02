@@ -1,25 +1,30 @@
-{
-    "userForms": [
+
         {
             "id": 1,
             "name": "UserForm1",
             "visible": true,
             "autoSize": false,
             "controls":[],
-            "style":{},
-            "backColor": "Window Text",
-            "borderColor": "Button Text",
-            "borderStyle":"0 - fmBorderStyleSingle",
+            "style":{
+                "backgroundColor":"whitesmoke",
+                "borderColor": "black",
+                "borderStyle": "dashed",
+                "fontStyle": "Arial, Helvetica, sans-serif",
+                "color":"bisque",
+                "height": "180",
+                "left":"0",
+                "position":"initial",
+                "top": 0,
+                "width": 240,
+                "zoom": 100
+
+            },
             "caption": "UserForm1",
             "cycle": "0 - fmCycleAllForms",
             "drawBuffer": 32000,
             "enabled": true,
-            "font": "Tahoma",
-            "foreColor": "Button Text",
-            "height": 180,
             "helpContextId": 0,
             "keepScrollsBarsVisible": "fmScrollBarsNone",
-            "left": 0,
             "mouseIcon": "(None)",
             "mousePointer": "0 - fmMousePointerDefault",
             "picture": "(None)",
@@ -34,13 +39,7 @@
             "scrollWidth": 0,
             "showModal": true,
             "specialEffect": "0 - fmSpecialEffectFlat",
-            "startUpPosition": "0 - Manual",
             "tag": "",
-            "top": 0,
             "whatsThisButton": false,
-            "whatsThisHelp": false,
-            "width": 240,
-            "zoom": 100
+            "whatsThisHelp": false
         }
-    ]
-}

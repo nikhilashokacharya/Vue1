@@ -459,7 +459,7 @@ th {
     padding-right: 2px;
     padding-bottom: 1px;
     padding-left: 2px; */
-    font-size: 10px;
+    font-size: 12px;
 }
 /* tr {
   width: 50%;
@@ -468,7 +468,7 @@ th {
   float: left;
   width: 280px;
   cursor: pointer;
-  background-color: rgb(190, 185, 185);
+  background-color: white;
   /* border: 6px solid grey; */
 }
 label {
@@ -491,6 +491,7 @@ select {
   height: 22px ;
   text-align: left;
   padding: 0pc;
+  
 }
 
 /* Must be added as style for the new data */

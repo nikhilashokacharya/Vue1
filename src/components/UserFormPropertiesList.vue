@@ -13,17 +13,23 @@
         <b>CommandButton1</b> CommandButton
       </option>
     </select>
-    <UserFormTable />
+    <!-- <UserFormTable /> -->
+    <!-- <LabelControlTable /> -->
+    <CommandButtonControl />
   </div>
 </template>
 
 <script>
-import UserFormTable from "./UserFormTable.vue";
+// import UserFormTable from "./UserFormTable.vue";
+// import LabelControlTable from "./LabelControlTable.vue";
+import CommandButtonControl from "./CommandButtonControl.vue";
 export default {
   name: "SelectDropdown",
   props: ["userForm"],
   components: {
-    UserFormTable
+    // UserFormTable,
+    // LabelControlTable,
+    CommandButtonControl
   },
   data() {
     return {
@@ -36,4 +42,10 @@ export default {
 </script>
 
 <style scoped>
+.form-control {
+  float: left;
+  width: 280px;
+  cursor: pointer;
+  background-color: white;
+}
 </style>

@@ -1,7 +1,17 @@
 <template>
   <div>
+    <div class="btn-group">
+      <button class="button" default>Alphabetic</button>
+      <button class="button">Categorized</button>
+    </div>
     <table class="table">
       <!-- <caption class="caption">Properties</caption> -->
+      <tr>
+        <th>(Name)</th>
+        <td>
+          <input type="text" />
+        </td>
+      </tr>
       <tr>
         <th>BackColor</th>
         <td>
@@ -67,7 +77,7 @@
         <th>ForeColor</th>
         <td>
           <select :value="foreColor">
-             <option v-for="(item,key) in foreColor" :key="key" :value="item">{{item}}</option>
+            <option v-for="(item,key) in foreColor" :key="key" :value="item">{{item}}</option>
           </select>
         </td>
       </tr>
@@ -86,7 +96,7 @@
       <tr>
         <th>KeepScrollsBarsVisible</th>
         <td>
-          <select>
+          <select :value="keepScrollsBarsVisible">
             <option v-for="(item,key) in keepScrollsBarsVisible" :key="key" :value="item">{{item}}</option>
           </select>
         </td>
@@ -137,18 +147,18 @@
         <th>PictureTiling</th>
         <td>
           <select :value="PictureTiling">
-         <option selected>false</option>
+            <option selected>false</option>
             <option>true</option>
-        </select>
+          </select>
         </td>
       </tr>
       <tr>
         <th>RightToLeft</th>
         <td>
           <select :value="rightToLeft">
-         <option selected>false</option>
+            <option selected>false</option>
             <option>true</option>
-        </select>
+          </select>
         </td>
       </tr>
       <tr>
@@ -168,7 +178,7 @@
       <tr>
         <th>ScrollLeft</th>
         <td>
-          <input type="text" :value="scrollLeft"  />
+          <input type="text" :value="scrollLeft" />
         </td>
       </tr>
       <tr>
@@ -197,7 +207,7 @@
         <th>SpecialEffect</th>
         <td>
           <select :value="specialEffect">
-             <option v-for="(item,key) in specialEffect" :key="key" :value="item">{{item}}</option>
+            <option v-for="(item,key) in specialEffect" :key="key" :value="item">{{item}}</option>
           </select>
         </td>
       </tr>
@@ -205,38 +215,38 @@
         <th>StartUpPosition</th>
         <td>
           <select :value="startUpPosition">
-             <option v-for="(item,key) in startUpPosition" :key="key" :value="item">{{item}}</option>
+            <option v-for="(item,key) in startUpPosition" :key="key" :value="item">{{item}}</option>
           </select>
         </td>
       </tr>
       <tr>
         <th>Tag</th>
         <td>
-          <input type="text" :value="tag"/>
+          <input type="text" :value="tag" />
         </td>
       </tr>
       <tr>
         <th>Top</th>
         <td>
-          <input type="text" :value="top"/>
+          <input type="text" :value="top" />
         </td>
       </tr>
       <tr>
         <th>WhatsThisButton</th>
         <td>
           <select :value="whatsThisButton">
-         <option selected>false</option>
+            <option selected>false</option>
             <option>true</option>
-        </select>
+          </select>
         </td>
       </tr>
       <tr>
         <th>WhatsThisHelp</th>
         <td>
           <select :value="whatsThisHelp">
-         <option selected>false</option>
+            <option selected>false</option>
             <option>true</option>
-        </select>
+          </select>
         </td>
       </tr>
       <tr>
@@ -275,24 +285,22 @@ import startUpPosition from "./models/startUpPosition.json";
 export default {
   name: "userFormTable",
   props: ["userForms"],
-  components: {
-    
-  },
+  components: {},
   data() {
     return {
-      backColor:backColor,
+      backColor: backColor,
       // root: userForms,
-      borderColor:borderColor,
-      borderStyle:borderStyle,
-      cycle:cycle,
-      font:font,
-      foreColor:foreColor,
-      keepScrollsBarsVisible:keepScrollsBarsVisible,
-      mousePointer:mousePointer,
-      pictureAlignment:pictureAlignment,
-      scrollBars:scrollBars,
-      specialEffect:specialEffect,
-      startUpPosition:startUpPosition
+      borderColor: borderColor,
+      borderStyle: borderStyle,
+      cycle: cycle,
+      font: font,
+      foreColor: foreColor,
+      keepScrollsBarsVisible: keepScrollsBarsVisible,
+      mousePointer: mousePointer,
+      pictureAlignment: pictureAlignment,
+      scrollBars: scrollBars,
+      specialEffect: specialEffect,
+      startUpPosition: startUpPosition
     };
   }
 };
@@ -307,7 +315,7 @@ th,
 td {
   /* table-layout: fixed; */
   margin-right: 0%;
-  width: 10%;
+  width: 100%;
   border: 1px solid black;
   border-collapse: collapse;
 }
@@ -317,15 +325,10 @@ td {
 }
 th {
   width: 120%;
-  /* padding-top: 1px;
-    padding-right: 2px;
-    padding-bottom: 1px;
-    padding-left: 2px; */
-    font-size: 10px;
+
+  font-size: 12px;
 }
-/* tr {
-  width: 50%;
-} */
+
 .form-control {
   float: left;
   width: 280px;
@@ -337,12 +340,11 @@ label {
   float: left;
 }
 select {
-  width:100%
+  width: 100%;
 }
 
 /* Must be added as style for the new data */
 .btn-group .button {
-  
   border: none;
   color: black;
 
@@ -350,6 +352,17 @@ select {
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
+  cursor: pointer;
+  /* float: left; */
+}
+.btn-group .button {
+  border: none;
+  color: black;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
   cursor: pointer;
   /* float: left; */
 }

@@ -1,7 +1,17 @@
 <template>
 <div>
+  <div class="btn-group">
+      <button class="button" default>Alphabetic</button>
+      <button class="button">Categorized</button>
+    </div>
   <table class="table">
-    <caption class="caption">Properties</caption>
+    <!-- <caption class="caption">Properties</caption> -->
+    <tr>
+      <th>(Name)</th>
+      <td>
+        <input type="text">
+      </td>
+    </tr>
     <tr>
       <th>Accelerator</th>
       <td>
@@ -14,6 +24,7 @@
         <select :value="autosize">
          <option selected>false</option>
             <option>true</option>
+        </select>
       </td>
     </tr>
     <tr>
@@ -230,4 +241,71 @@ export default {
 </script>
 
 <style>
+.node {
+  text-align: left;
+}
+table,
+th,
+td {
+  /* table-layout: fixed; */
+  margin-right: 0%;
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th,
+td {
+  text-align: left;
+}
+th {
+  width: 120%;
+  /* padding-top: 1px;
+    padding-right: 2px;
+    padding-bottom: 1px;
+    padding-left: 2px; */
+  font-size: 12px;
+}
+/* tr {
+  width: 50%;
+} */
+.form-control {
+  float: left;
+  width: 280px;
+  cursor: pointer;
+  background-color: rgb(190, 185, 185);
+  /* border: 6px solid grey; */
+}
+label {
+  float: left;
+}
+select {
+  width: 100%;
+}
+
+/* Must be added as style for the new data */
+.btn-group .button {
+  border: none;
+  color: black;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  /* float: left; */
+}
+.btn-group .button {
+  
+  border: none;
+  color: black;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+  /* float: left; */
+ 
+}
+
 </style>

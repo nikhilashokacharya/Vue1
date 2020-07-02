@@ -19,9 +19,9 @@
       </button>
       <button class="tablink" @click="selectToolBox">
         <u>V</u>iew
-        <div @click="openToolBox" v-if="selectedToolBox">
-          <button>ToolBox</button>
-        </div>
+        <ul @click="openToolBox" v-if="selectedToolBox">
+          <li>ToolBox</li>
+        </ul>
       </button>
       <button class="tablink" @click="selectUserForm">
         <u>I</u>nsert

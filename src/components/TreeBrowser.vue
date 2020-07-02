@@ -80,6 +80,7 @@ ul {
     margin-inline-end: 0px;
     padding-inline-start: 40px;
     cursor:pointer;
+    /* color: darkslateblue; */
 }
 /* .tree{
   top: 5px;

@@ -3,18 +3,23 @@
     "name": "commandButton1",
     "accelerator": "",
     "autoSize": false,
-    "backColor": "Window Text",
+    "style":{
+        "background-color":"whitesmoke",
+        "font-family": "Arial, Helvetica, sans-serif",
+        "color":"bisque",
+        "height": 10,
+        "left": 55,
+        "top":12,
+        "width": 240
+    },
+    
     "backStyle": "0 - fmBackStyleTransparent",
     "cancel": false,
     "caption": "commandButton1",
     "controlTipText": "",
     "default":false,
     "enabled": true,
-    "font": "Tahoma",
-    "foreColor": "Button Text",
-    "height": 40,
     "helpContextId": 0,
-    "left": 55,
     "locked": false,
     "mouseIcon": "(None)",
     "mousePointer": "0 - fmMousePointerDefault",
@@ -24,8 +29,6 @@
     "tabStop": false,
     "tag": "",
     "takeFocusOnClick":true,
-    "top": 18,
     "visible": true,
-    "width": 36,
     "wordWrap": true
 }

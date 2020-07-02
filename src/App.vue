@@ -142,6 +142,7 @@ export default {
                   }
                 },
                 innerWindowStyle: {
+                  //here add style
                   container: {
                     position: "absolute",
                     textAlign: "left",
@@ -280,6 +281,5 @@ hr {
   height: 22px ;
   text-align: left;
   padding: 0pc;
-  /* font-style: "Verdana"; */
 }
 </style>
