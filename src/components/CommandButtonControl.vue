@@ -1,221 +1,203 @@
 <template>
-<div>
-  <div class="btn-group">
+  <div>
+    <div class="btn-group">
       <button class="button" default>Alphabetic</button>
       <button class="button">Categorized</button>
     </div>
-  <table class="table">
-    <!-- <caption class="caption">Properties</caption> -->
-    <tr>
-        <th>(Name)</th>
+    <table class="table">
+      <!-- <caption class="caption">Properties</caption> -->
+      <tr>
+        <td>(Name)</td>
         <td>
-          <input type="text" />
+          <input type="text" :value="name" />
         </td>
       </tr>
-    <tr>
-      <th>Accelerator</th>
-      <td>
-        <input type="text" :value="accelerator"/>
-      </td>
-    </tr>
-    <tr>
-      <th>AutoSize</th>
-      <td>
-        <select :value="autosize">
-         <option selected>false</option>
-            <option>true</option>
+      <tr>
+        <td>Accelerator</td>
+        <td>
+          <input type="text" :value="accelerator" />
+        </td>
+      </tr>
+      <tr>
+        <td>AutoSize</td>
+        <td>
+          <select :value="autosize">
+            <option selected>False</option>
+            <option>True</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>BackColor</td>
+        <td>
+          <select :value="backColor">
+            <option v-for="(item,key) in backColor" :key="key" :value="item">{{key}}</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>BackStyle</td>
+        <select :value="backStyle">
+          <option v-for="(item,key) in backStyle" :key="key" :value="item">{{key}}</option>
         </select>
-      </td>
-    </tr>
-    <tr>
-      <th>BackColor</th>
-      <td>
-        <select :value="backColor">
-            <option v-for="(item,key) in backColor" :key="key" :value="item">{{item}}</option>
-          </select>
-      </td>
-    </tr>
-    <tr>
-      <th>BackStyle</th>
-      <select :value="backStyle">
-            <option v-for="(item,key) in backStyle" :key="key" :value="item">{{item}}</option>
-          </select>
-    </tr>
-    <!-- <tr>
-      <th>BorderColor</th>
-      <td>
-        <select :value="borderColor">
-            <option v-for="(item,key) in borderColor" :key="key" :value="item">{{item}}</option>
-          </select>
-      </td>
-    </tr> -->
-    <!-- <tr>
-      <th>BorderStyle</th>
-      <td>
-        <select :value="borderStyle">
-            <option v-for="(item,key) in borderStyle" :key="key" :value="item">{{item}}</option>
-          </select>
-      </td>
-    </tr> -->
-    <tr>
-      <th>Caption</th>
-      <td>
-        <input type="text" :value="caption" />
-      </td>
-    </tr>
-    <tr>
-      <th>ControlTipText</th>
-      <td>
-        <input type="text" :value="controlTipText" />
-      </td>
-    </tr>
-    <!-- <tr>
-      <th>Default</th>
+      </tr>
+      <tr>
+        <td>Caption</td>
+        <td>
+          <input type="text" :value="caption" />
+        </td>
+      </tr>
+      <tr>
+        <td>ControlTipText</td>
+        <td>
+          <input type="text" :value="controlTipText" />
+        </td>
+      </tr>
+      <!-- <tr>
+      <td>Default</td>
       <td>
         <select :value="default">
             <option selected>true</option>
             <option>false</option>
           </select>
       </td>
-    </tr> -->
-    <tr>
-      <th>Enabled</th>
-      <td>
-        <select :value="enabled">
-            <option selected>true</option>
-            <option>false</option>
+      </tr>-->
+      <tr>
+        <td>Enabled</td>
+        <td>
+          <select :value="enabled">
+            <option selected>True</option>
+            <option>False</option>
           </select>
-      </td>
-    </tr>
-    <tr>
-      <th>Font</th>
-      <td>
-        <select>
-          <option v-for="(value,key) in font" v-bind:value="value" :key="key">{{item}}</option>
-        </select>
-      </td>
-    </tr>
-    <tr>
-      <th>ForeColor</th>
-      <td>
-        <select>
-          <option v-for="(value,key) in foreColor" v-bind:value="value" :key="key">{{item}}</option>
-        </select>
-      </td>
-    </tr>
-    <tr>
-      <th>Height</th>
-      <td>
-        <input type="text" :value="height" />
-      </td>
-    </tr>
-    <tr>
-      <th>HelpContextId</th>
-      <td>
-        <input type="text" :value="helpContextId" />
-      </td>
-    </tr>
-    <tr>
-      <th>Left</th>
-      <td>
-        <input type="text" :value="left" />
-      </td>
-    </tr>
-    <tr>
-      <th>Locked</th>
-      <td>
-        <input type="text" :value="locked" />
-      </td>
-    </tr>
-    <tr>
-      <th>MouseIcon</th>
-      <td>
-        <input type="text" :value="mouseIcon" />
-      </td>
-    </tr>
-    <tr>
-      <th>MousePointer</th>
-      <td>
-        <select>
-          <option v-for="(value,key) in mousePointer" v-bind:value="value" :key="key">{{item}}</option>
-        </select>
-      </td>
-    </tr>
-    <tr>
-      <th>Picture</th>
-      <td>
-        <input type="text" :value="picture" />
-      </td>
-    </tr>
-    <tr>
-      <th>PicturePosition</th>
-      <td>
-        <select>
-          <option v-for="(value,key) in picturePosition" v-bind:value="value" :key="key">{{item}}</option>
-        </select>
-      </td>
-    </tr>
-    <!-- <tr>
-      <th>SpecialEffect</th>
-      <td>
-        <select>
-          <option v-for="(value,key) in specialEffect" v-bind:value="value" :key="key">{{item}}</option>
-        </select>
-      </td>
-    </tr> -->
-    <tr>
-      <th>TabIndex</th>
-      <td>
-        <input type="text" :value="tabIndex" />
-      </td>
-    </tr>
-    <tr>
-      <th>TabStop</th>
-      <td>
-        <input type="text" :value="tabStop" />
-      </td>
-    </tr>
-    <tr>
-      <th>Tag</th>
-      <td>
-        <input type="text" :value="tag" />
-      </td>
-    </tr>
-    <tr>
-      <th>TakeFocusOnClick</th>
-      <td>
-        <select :value="takeFocusOnClick">
-            <option selected>true</option>
-            <option>false</option>
+        </td>
+      </tr>
+      <tr>
+        <td>Font</td>
+        <td>
+          <select>
+            <option v-for="(value,key) in font" v-bind:value="value" :key="key">{{key}}</option>
           </select>
-      </td>
-    </tr>
-    <tr>
-      <th>Top</th>
-      <td>
-        <input type="text" :value="top" />
-      </td>
-    </tr>
-    <tr>
-      <th>Visible</th>
-      <td>
-        <input type="text" :value="visible" />
-      </td>
-    </tr>
-    <tr>
-      <th>Width</th>
-      <td>
-        <input type="text" :value="width" />
-      </td>
-    </tr>
-    <tr>
-      <th>WordWrap</th>
-      <td>
-        <input type="text" :value="wordWrap" />
-      </td>
-    </tr>
-  </table>
-</div>
+        </td>
+      </tr>
+      <tr>
+        <td>ForeColor</td>
+        <td>
+          <select>
+            <option v-for="(value,key) in foreColor" v-bind:value="value" :key="key">{{key}}</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Height</td>
+        <td>
+          <input type="number" :value="height" />
+        </td>
+      </tr>
+      <tr>
+        <td>HelpContextId</td>
+        <td>
+          <input type="number" :value="helpContextId" />
+        </td>
+      </tr>
+      <tr>
+        <td>Left</td>
+        <td>
+          <input type="number" :value="left" />
+        </td>
+      </tr>
+      <tr>
+        <td>Locked</td>
+        <td>
+          <select :value="locked">
+            <option selected>True</option>
+            <option>False</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>MouseIcon</td>
+        <td>
+          <input type="text" :value="mouseIcon" />
+        </td>
+      </tr>
+      <tr>
+        <td>MousePointer</td>
+        <td>
+          <select>
+            <option v-for="(value,key) in mousePointer" v-bind:value="value" :key="key">{{key}}</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Picture</td>
+        <td>
+          <input type="text" :value="picture" />
+        </td>
+      </tr>
+      <tr>
+        <td>PicturePosition</td>
+        <td>
+          <select>
+            <option v-for="(value,key) in picturePosition" v-bind:value="value" :key="key">{{key}}</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>TabIndex</td>
+        <td>
+          <input type="number" :value="tabIndex" />
+        </td>
+      </tr>
+      <tr>
+        <td>TabStop</td>
+        <td>
+          <input type="text" :value="tabStop" />
+        </td>
+      </tr>
+      <tr>
+        <td>Tag</td>
+        <td>
+          <input type="text" :value="tag" />
+        </td>
+      </tr>
+      <tr>
+        <td>TakeFocusOnClick</td>
+        <td>
+          <select :value="takeFocusOnClick">
+            <option selected>True</option>
+            <option>False</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Top</td>
+        <td>
+          <input type="number" :value="top" />
+        </td>
+      </tr>
+      <tr>
+        <td>Visible</td>
+        <td>
+          <select :value="visible">
+            <option selected>True</option>
+            <option>False</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Width</td>
+        <td>
+          <input type="number" :value="width" />
+        </td>
+      </tr>
+      <tr>
+        <td>WordWrap</td>
+        <td>
+          <input type="text" :value="wordWrap" />
+        </td>
+      </tr>
+    </table>
+  </div>
 </template>
 
 <script>
@@ -231,56 +213,46 @@ import specialEffect from "./models/specialEffect.json";
 import textAlign from "./models/textAlign.json";
 
 export default {
-
-   data() {
+  data() {
     return {
-      backColor:backColor,
+      backColor: backColor,
       // root: userForms,
-      backStyle:backStyle,
-      borderColor:borderColor,
-      borderStyle:borderStyle,
+      backStyle: backStyle,
+      borderColor: borderColor,
+      borderStyle: borderStyle,
       // cycle:cycle,
-      font:font,
-      foreColor:foreColor,
+      font: font,
+      foreColor: foreColor,
       // keepScrollsBarsVisible:keepScrollsBarsVisible,
-      mousePointer:mousePointer,
-      picturePosition:picturePosition,
+      mousePointer: mousePointer,
+      picturePosition: picturePosition,
       // pictureAlignment:pictureAlignment,
       // scrollBars:scrollBars,
-      specialEffect:specialEffect,
+      specialEffect: specialEffect,
       // startUpPosition:startUpPosition
-      textAlign:textAlign
-      
+      textAlign: textAlign
     };
   }
 };
 </script>
 
-<style>
-.node {
-  text-align: left;
-}
+<style scoped>
 table,
-th,
 td {
   /* table-layout: fixed; */
   margin-right: 0%;
   width: 100%;
   border: 1px solid black;
   border-collapse: collapse;
+  font-size: 11px;
+  padding: none;
+  color: black;
 }
-th,
+
 td {
   text-align: left;
 }
-th {
-  width: 120%;
-  /* padding-top: 1px;
-    padding-right: 2px;
-    padding-bottom: 1px;
-    padding-left: 2px; */
-  font-size: 12px;
-}
+
 /* tr {
   width: 50%;
 } */
@@ -311,7 +283,6 @@ select {
   /* float: left; */
 }
 .btn-group .button {
-  
   border: none;
   color: black;
 

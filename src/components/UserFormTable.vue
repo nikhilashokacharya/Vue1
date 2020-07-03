@@ -7,258 +7,258 @@
     <table class="table">
       <!-- <caption class="caption">Properties</caption> -->
       <tr>
-        <th>(Name)</th>
+        <td>(Name)</td>
         <td>
           <input type="text" />
         </td>
       </tr>
       <tr>
-        <th>BackColor</th>
+        <td>BackColor</td>
         <td>
           <select :value="backColor">
-            <option v-for="(item,key) in backColor" :key="key" :value="item">{{item}}</option>
+            <option v-for="(item,key) in backColor" :key="key" :value="item">{{key}}</option>
           </select>
         </td>
       </tr>
       <tr>
-        <th>BorderColor</th>
+        <td>BorderColor</td>
         <td>
           <select :value="borderColor">
-            <option v-for="(item,key) in borderColor" :key="key" :value="item">{{item}}</option>
+            <option v-for="(item,key) in borderColor" :key="key" :value="item">{{key}}</option>
           </select>
         </td>
       </tr>
       <tr>
-        <th>BorderStyle</th>
+        <td>BorderStyle</td>
         <td>
           <select :value="borderStyle">
-            <option v-for="(item,key) in borderStyle" :key="key" :value="item">{{item}}</option>
+            <option v-for="(item,key) in borderStyle" :key="key" :value="item">{{key}}</option>
           </select>
         </td>
       </tr>
       <tr>
-        <th>Caption</th>
+        <td>Caption</td>
         <td>
           <input type="text" :value="caption" />
         </td>
       </tr>
       <tr>
-        <th>Cycle</th>
+        <td>Cycle</td>
         <td>
           <select :value="cycle">
-            <option v-for="(item,key) in cycle" :key="key" :value="item">{{item}}</option>
+            <option v-for="(item,key) in cycle" :key="key" :value="item">{{key}}</option>
           </select>
         </td>
       </tr>
       <tr>
-        <th>DrawBuffer</th>
+        <td>DrawBuffer</td>
         <td>
           <input type="text" :value="drawBuffer" />
         </td>
       </tr>
       <tr>
-        <th>Enabled</th>
+        <td>Enabled</td>
         <td>
           <select :value="enabled">
-            <option selected>true</option>
-            <option>false</option>
+            <option selected>True</option>
+            <option>False</option>
           </select>
         </td>
       </tr>
       <tr>
-        <th>Font</th>
+        <td>Font</td>
         <td>
           <select :value="font">
-            <option v-for="(item,key) in font" :key="key" :value="item">{{item}}</option>
+            <option v-for="(item,key) in font" :key="key" :value="item">{{key}}</option>
           </select>
         </td>
       </tr>
       <tr>
-        <th>ForeColor</th>
+        <td>ForeColor</td>
         <td>
           <select :value="foreColor">
-            <option v-for="(item,key) in foreColor" :key="key" :value="item">{{item}}</option>
+            <option v-for="(item,key) in foreColor" :key="key" :value="item">{{key}}</option>
           </select>
         </td>
       </tr>
       <tr>
-        <th>Height</th>
+        <td>Height</td>
         <td>
-          <input type="text" :value="height" />
+          <input type="number" :value="height" />
         </td>
       </tr>
       <tr>
-        <th>HelpContextId</th>
+        <td>HelpContextId</td>
         <td>
-          <input type="text" :value="helpContextId" />
+          <input type="number" :value="helpContextId" />
         </td>
       </tr>
       <tr>
-        <th>KeepScrollsBarsVisible</th>
+        <td>KeepScrollsBarsVisible</td>
         <td>
           <select :value="keepScrollsBarsVisible">
-            <option v-for="(item,key) in keepScrollsBarsVisible" :key="key" :value="item">{{item}}</option>
+            <option v-for="(item,key) in keepScrollsBarsVisible" :key="key" :value="item">{{key}}</option>
           </select>
         </td>
       </tr>
       <tr>
-        <th>Left</th>
+        <td>Left</td>
         <td>
-          <input type="text" :value="left" />
+          <input type="number" :value="left" />
         </td>
       </tr>
       <tr>
-        <th>MouseIcon</th>
+        <td>MouseIcon</td>
         <td>
           <input type="text" :value="mouseIcon" />
         </td>
       </tr>
       <tr>
-        <th>MousePointer</th>
+        <td>MousePointer</td>
         <td>
           <select :value="mousePointer">
-            <option v-for="(item,key) in mousePointer" :key="key" :value="item">{{item}}</option>
+            <option v-for="(item,key) in mousePointer" :key="key" :value="item">{{key}}</option>
           </select>
         </td>
       </tr>
       <tr>
-        <th>Picture</th>
+        <td>Picture</td>
         <td>
           <input type="text" :value="picture" />
         </td>
       </tr>
       <tr>
-        <th>PictureAlignment</th>
+        <td>PictureAlignment</td>
         <td>
           <select :value="pictureAlignment">
-            <option v-for="(item,key) in pictureAlignment" :key="key" :value="item">{{item}}</option>
+            <option v-for="(item,key) in pictureAlignment" :key="key" :value="item">{{key}}</option>
           </select>
         </td>
       </tr>
       <tr>
-        <th>PictureSizeMode</th>
+        <td>PictureSizeMode</td>
         <td>
           <select :value="pictureSizeMode">
-            <option v-for="(item,key) in pictureSizeMode" :key="key" :value="item">{{item}}</option>
+            <option v-for="(item,key) in pictureSizeMode" :key="key" :value="item">{{key}}</option>
           </select>
         </td>
       </tr>
       <tr>
-        <th>PictureTiling</th>
+        <td>PictureTiling</td>
         <td>
           <select :value="PictureTiling">
-            <option selected>false</option>
-            <option>true</option>
+            <option selected>False</option>
+            <option>True</option>
           </select>
         </td>
       </tr>
       <tr>
-        <th>RightToLeft</th>
+        <td>RightToLeft</td>
         <td>
           <select :value="rightToLeft">
-            <option selected>false</option>
-            <option>true</option>
+            <option selected>False</option>
+            <option>True</option>
           </select>
         </td>
       </tr>
       <tr>
-        <th>ScrollBars</th>
+        <td>ScrollBars</td>
         <td>
           <select :value="scrollBars">
-            <option v-for="(item,key) in scrollBars" :key="key" :value="item">{{item}}</option>
+            <option v-for="(item,key) in scrollBars" :key="key" :value="item">{{key}}</option>
           </select>
         </td>
       </tr>
       <tr>
-        <th>ScrollHeight</th>
+        <td>ScrollHeight</td>
         <td>
-          <input type="text" :value="scrollHeight" />
+          <input type="number" :value="scrollHeight" />
         </td>
       </tr>
       <tr>
-        <th>ScrollLeft</th>
+        <td>ScrollLeft</td>
         <td>
-          <input type="text" :value="scrollLeft" />
+          <input type="number" :value="scrollLeft" />
         </td>
       </tr>
       <tr>
-        <th>ScrollTop</th>
+        <td>ScrollTop</td>
         <td>
-          <input type="text" :value="scrollTop" />
+          <input type="number" :value="scrollTop" />
         </td>
       </tr>
 
       <tr>
-        <th>ScrollWidth</th>
+        <td>ScrollWidth</td>
         <td>
-          <input type="text" :value="scrollWidth" />
+          <input type="number" :value="scrollWidth" />
         </td>
       </tr>
       <tr>
-        <th>ShowModal</th>
+        <td>ShowModal</td>
         <td>
           <select :value="showModal">
-            <option selected>true</option>
-            <option>false</option>
+            <option selected>True</option>
+            <option>False</option>
           </select>
         </td>
       </tr>
       <tr>
-        <th>SpecialEffect</th>
+        <td>SpecialEffect</td>
         <td>
           <select :value="specialEffect">
-            <option v-for="(item,key) in specialEffect" :key="key" :value="item">{{item}}</option>
+            <option v-for="(item,key) in specialEffect" :key="key" :value="item">{{key}}</option>
           </select>
         </td>
       </tr>
       <tr>
-        <th>StartUpPosition</th>
+        <td>StartUpPosition</td>
         <td>
           <select :value="startUpPosition">
-            <option v-for="(item,key) in startUpPosition" :key="key" :value="item">{{item}}</option>
+            <option v-for="(item,key) in startUpPosition" :key="key" :value="item">{{key}}</option>
           </select>
         </td>
       </tr>
       <tr>
-        <th>Tag</th>
+        <td>Tag</td>
         <td>
           <input type="text" :value="tag" />
         </td>
       </tr>
       <tr>
-        <th>Top</th>
+        <td>Top</td>
         <td>
-          <input type="text" :value="top" />
+          <input type="number" :value="top" />
         </td>
       </tr>
       <tr>
-        <th>WhatsThisButton</th>
+        <td>WhatsThisButton</td>
         <td>
           <select :value="whatsThisButton">
-            <option selected>false</option>
-            <option>true</option>
+            <option selected>False</option>
+            <option>True</option>
           </select>
         </td>
       </tr>
       <tr>
-        <th>WhatsThisHelp</th>
+        <td>WhatsThisHelp</td>
         <td>
           <select :value="whatsThisHelp">
-            <option selected>false</option>
-            <option>true</option>
+            <option selected>False</option>
+            <option>True</option>
           </select>
         </td>
       </tr>
       <tr>
-        <th>Width</th>
+        <td>Width</td>
         <td>
-          <input type="text" :value="width" />
+          <input type="number" :value="width" />
         </td>
       </tr>
       <tr>
-        <th>Zoom</th>
+        <td>Zoom</td>
         <td>
-          <input type="text" :value="zoom" />
+          <input type="number" :value="zoom" />
         </td>
       </tr>
     </table>
@@ -318,6 +318,10 @@ td {
   width: 100%;
   border: 1px solid black;
   border-collapse: collapse;
+  font-size: 11px;
+  font-display: initial;
+  /* font: Tahoma; */
+  color: black;
 }
 th,
 td {

@@ -5,6 +5,7 @@
         {
             "id": 1,
             "name": "UserForm",
+            "type":"UserForm",
             "visible": true,
             "autoSize": false,
             "caption": "UserForm1",

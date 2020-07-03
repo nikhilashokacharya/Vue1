@@ -1,6 +1,6 @@
-[
-    "fmScrollBarsNone",
-    "fmScrollBarsHorizontal",
-    "fmScrollBarsVertical",
-    "fmScrollBarsBoth"
-]
+{
+    "fmScrollBarsNone":"fmScrollBarsNone",
+    "fmScrollBarsHorizontal":"fmScrollBarsHorizontal",
+    "fmScrollBarsVertical":"fmScrollBarsVertical",
+    "fmScrollBarsBoth":"fmScrollBarsBoth"
+}

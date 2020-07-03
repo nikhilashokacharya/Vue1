@@ -19,15 +19,15 @@
       </button>
       <button class="tablink" @click="selectToolBox">
         <u>V</u>iew
-        <ul @click="openToolBox" v-if="selectedToolBox">
+        <!-- <ul @click="openToolBox" v-if="selectedToolBox">
           <li>ToolBox</li>
-        </ul>
+        </ul> -->
       </button>
       <button class="tablink" @click="selectUserForm">
         <u>I</u>nsert
-        <select @click="openUserForm" v-if="selectedUserForm">
+        <!-- <select @click="openUserForm" v-if="selectedUserForm">
           <option>UserForm</option>
-        </select>
+        </select> -->
       </button>
       <button class="tablink">
         <u>F</u>ormat
@@ -97,7 +97,7 @@ export default {
 
 <style>
 .tablink {
-  background-color: rgba(218, 214, 214, 0.616);
+  background-color: rgba(240, 234, 234, 0.877);
   color: rgb(17, 17, 17);
   padding: 5px;
   cursor: pointer;
@@ -115,9 +115,9 @@ export default {
 }
 .secondrow {
   border: 1px transparent;
-  color: rgba(194, 189, 189, 0.616);
+  /* color: rgba(194, 189, 189, 0.616); */
   padding: 5px;
-  background-color: rgba(194, 189, 189, 0.616);
+  background-color: rgba(240, 234, 234, 0.877);
   height: 20px;
 }
 .buttons {

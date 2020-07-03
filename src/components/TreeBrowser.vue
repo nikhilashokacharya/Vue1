@@ -62,11 +62,6 @@ export default {
   z-index: 1;
   top: 30;
   left: 0;
-  /* background-color: rgb(228, 228, 228); */
-  /* overflow-x: hidden; */
-  /* padding-top: 15px; */
-  /* padding-bottom: 5px; */
-  /* border: 2px solid grey; */
 }
 .node {
   text-align: left;
@@ -82,10 +77,5 @@ ul {
     cursor:pointer;
     /* color: darkslateblue; */
 }
-/* .tree{
-  top: 5px;
-  bottom: 5px;
-  background-color: rgb(131, 124, 124);
-} */
 </style>
 

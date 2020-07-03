@@ -272,14 +272,19 @@ hr {
 .sideheader1{
   top: 0%;
   width: 250px;
-  background-color: #cdd4db;
+  /* background-color: #cdd4db; */
   /* padding-bottom: 8px; */
+  /* background: "linear-gradient(30deg,#adc9e7ba 0%,#a2b4cee6 50%,#9eadd0db 51%,#a1bdd28f 100%)"; */
+  background-color: rgb(142, 191, 231);
   margin-bottom:8px ;
 }
 .sideheader{
-  background-color: #cdd4db; 
+  /* background-color: #cdd4db;  */
+  /* background: "linear-gradient(30deg,#adc9e7ba 0%,#a2b4cee6 50%,#9eadd0db 51%,#a1bdd28f 100%)"; */
   height: 22px ;
   text-align: left;
   padding: 0pc;
+  background-color: rgb(142, 191, 231);
+
 }
 </style>
